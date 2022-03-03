@@ -12,8 +12,37 @@ public class Conta {
     String nomeTitular;
     String agaencia;
     int numero;
-    double saldo;
+    private double saldo;
+    static private int totalDeContas;
 
+    Conta(){
+        Conta.totalDeContas = Conta.totalDeContas + 1;
+    }
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public static int getTotalDeContas() {
+        return Conta.totalDeContas;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public Conta(String nomeTitular) {
+        this.nomeTitular = nomeTitular;
+    }
+
+    boolean novoSaldo(double valor) {
+        if (valor > 0) {
+            this.saldo = valor;
+            return true;
+        } else {
+            return false;
+
+        }
+    }
 
     boolean saca(double valor) {
         if (valor < saldo) {
