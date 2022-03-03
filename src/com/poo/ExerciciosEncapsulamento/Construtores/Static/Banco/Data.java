@@ -7,6 +7,8 @@ import java.util.Date;
 
 public class Data {
 //    IMPRIMIR ESSA DATA FORMATADA NA TELA
+//    6.	 (opcional)	Como	garantir
+//    que	datas	como	31/2/2012	não	sejam	aceitas	pela	sua	classe		Data	?
     private int dia;
     private int mes;
     private int ano;
