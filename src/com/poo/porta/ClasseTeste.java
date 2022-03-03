@@ -10,6 +10,7 @@ public class ClasseTeste {
         porta.dimensaoZ = 333;
         porta.pintar("vermelho");
         porta.fecha();
+        porta.estaAberta();
         System.out.println(porta.especificacoes());
     }
 }
