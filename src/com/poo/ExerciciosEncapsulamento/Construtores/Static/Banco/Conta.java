@@ -1,5 +1,7 @@
 package com.poo.ExerciciosEncapsulamento.Construtores.Static.Banco;
 
+import java.text.ParseException;
+
 public class Conta {
     private int numero;
     private double saldo;
@@ -8,6 +10,8 @@ public class Conta {
     private static int id;
 
 
+
+//      incremento de cada conta por id
     public Conta() {
         Conta.id = Conta.id +1;
     }
@@ -43,7 +47,7 @@ public class Conta {
             return true;
         }
     }
-    String imprime() {
+    String imprime() throws ParseException {
         String s = "numero conta:" + getNumero();
         s += "\nsaldo: " + getSaldo();
         s += "\ntitular: " + getNome();
@@ -52,6 +56,7 @@ public class Conta {
         System.out.println(s);
         return s;
     }
+
 
 
     public static int getId() {
