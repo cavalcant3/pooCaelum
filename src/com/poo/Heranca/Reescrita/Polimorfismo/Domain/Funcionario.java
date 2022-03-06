@@ -13,4 +13,15 @@ public class Funcionario {
         return this.salario * 0.10;
 
     }
+
+    public Funcionario(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
+    public String mostrarDados() {
+        String s = "\nNome: " + this.nome;
+               s += "\nCpf: " + this.cpf;
+        return s;
+    }
 }
