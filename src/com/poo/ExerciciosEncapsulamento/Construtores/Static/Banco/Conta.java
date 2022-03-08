@@ -2,6 +2,12 @@ package com.poo.ExerciciosEncapsulamento.Construtores.Static.Banco;
 
 import java.text.ParseException;
 
+/**
+ * Classe	responsavel	por	moldar	as	Contas	do	Banco
+ *
+ * @author Matheus Cavalcante
+ */
+
 public class Conta {
     private int numero;
     private double saldo;
@@ -10,17 +16,22 @@ public class Conta {
     private static int id;
 
 
-
-//      incremento de cada conta por id
+    //      incremento de cada conta por id
     public Conta() {
-        Conta.id = Conta.id +1;
+        Conta.id = Conta.id + 1;
     }
 
     public Conta(String nome) {
         this.nome = nome;
     }
 
-    boolean saca(double valor) {
+    /**
+     * Metodo	que	saca e diminui	o	saldo.
+     *
+     * @param    valor
+     */
+
+    public boolean saca(double valor) {
         if (valor < this.saldo) {
             saldo = saldo - valor;
             return true;
@@ -29,25 +40,33 @@ public class Conta {
         }
     }
 
-    void deposita(double valor) {
+    /**
+     * Metodo	que	incrementa	o	saldo.
+     *
+     * @param    valor
+     */
+
+    public void deposita(double valor) {
         if (valor > 0) {
             this.saldo += valor;
         }
     }
 
-    double calculaRendimento(){
+    public double calculaRendimento() {
         double novoSaldo = saldo * 0.1;
         return novoSaldo;
     }
-    boolean transfere(Conta destino, double valor){
+
+    public boolean transfere(Conta destino, double valor) {
         boolean verificacaoSaque = this.saca(valor);
-        if (verificacaoSaque == false){
+        if (verificacaoSaque == false) {
             return false;
         } else {
             return true;
         }
     }
-    String imprime() throws ParseException {
+
+    public String imprime() throws ParseException {
         String s = "numero conta:" + getNumero();
         s += "\nsaldo: " + getSaldo();
         s += "\ntitular: " + getNome();
@@ -56,7 +75,6 @@ public class Conta {
         System.out.println(s);
         return s;
     }
-
 
 
     public static int getId() {
