@@ -13,6 +13,7 @@ public class main {
 
 
 
+
         Funcionario funcionario = new Funcionario("peao","0800");
         funcionario.setSalario(900);
         System.out.println(funcionario.getBonificacao());
