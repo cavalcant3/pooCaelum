@@ -1,4 +1,4 @@
-package com.poo.casa;
+package com.poo.Cap8e9.casa;
 
 public class ClasseTeste {
     public static void main(String[] args) {

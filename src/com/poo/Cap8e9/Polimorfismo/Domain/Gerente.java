@@ -1,4 +1,4 @@
-package com.poo.Heranca.Reescrita.Polimorfismo.Domain;
+package com.poo.Cap8e9.Polimorfismo.Domain;
 
 public class Gerente extends Funcionario {
     int senha;

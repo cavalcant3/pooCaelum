@@ -1,7 +1,7 @@
-package com.poo.Heranca.Reescrita.Polimorfismo.Teste;
+package com.poo.Cap8e9.Polimorfismo.Teste;
 
-import com.poo.Heranca.Reescrita.Polimorfismo.Domain.Funcionario;
-import com.poo.Heranca.Reescrita.Polimorfismo.Domain.Gerente;
+import com.poo.Cap8e9.Polimorfismo.Domain.Funcionario;
+import com.poo.Cap8e9.Polimorfismo.Domain.Gerente;
 
 public class main {
     public static void main(String[] args) {

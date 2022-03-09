@@ -1,4 +1,4 @@
-package com.poo.aniversario;
+package com.poo.Cap8e9.aniversario;
 
 public class Pessoa {
     String nome;
