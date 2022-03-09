@@ -21,16 +21,20 @@ public class JogadoresTest {
 
 
         //ASSOCIAÇÃO MUITOS PARA MUITOS
-        Jogadores jogadores = new Jogadores("tiririca");
+        Jogadores jogadores = new Jogadores("Jogador tiririca");
+        Jogadores jogadores2 = new Jogadores("Jogador logitech");
 //        armazenando jogadores em um array
-        Jogadores[] jogador = {jogadores};
+        Jogadores[] jogador = {jogadores, jogadores2};
 
         Time time = new Time("Time abestado");
 //        setando os jogadores e os times:
         jogadores.setTime(time);
+        jogadores2.setTime(time);
+
         time.setJogadores(jogador);
         System.out.println("--Times--");
         time.imprime();
+
         System.out.println("--jogadores--");
         jogadores.imprime();
 
